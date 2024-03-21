@@ -1,0 +1,25 @@
+﻿<Window x:Class="WpfApp1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="LW2 C#" Height="701" Width="650">
+    <Grid Margin="0,10,0,-6">
+        <Label x:Name="label" Content="Параметри матриці" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="24"/>
+        <Label Content="Кількість рядків" HorizontalAlignment="Left" Margin="10,69,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <TextBox x:Name="textBoxRows" HorizontalAlignment="Left" Margin="169,76,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="30"/>
+        <Label Content="Кількість стовбців" HorizontalAlignment="Left" Margin="10,100,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <TextBox x:Name="textBoxColumns" HorizontalAlignment="Left" Margin="169,107,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="30"/>
+        <Label Content="Мінімальне значення елемента" HorizontalAlignment="Left" Margin="325,69,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <TextBox x:Name="textBoxMin" HorizontalAlignment="Left" Margin="601,76,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="30"/>
+        <Label Content="Максимальне значення елемента" HorizontalAlignment="Left" Margin="325,100,0,0" VerticalAlignment="Top" FontSize="16"/>
+        <TextBox x:Name="textBoxMax" HorizontalAlignment="Left" Margin="601,107,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="30"/>
+        <Label x:Name="result1" Content="" HorizontalAlignment="Left" Margin="10,136,0,0" VerticalAlignment="Top" Width="621" FontSize="16" FontWeight="Bold"/>
+        <Label x:Name="result2" Content="" HorizontalAlignment="Left" Margin="10,167,0,0" VerticalAlignment="Top" Width="621" FontSize="16" FontWeight="Bold"/>
+        <Button x:Name="createMatrix" Content="Створити матрицю" HorizontalAlignment="Left" Margin="10,212,0,0" VerticalAlignment="Top" Height="35" Width="310" Click="createMatrix_Click"/>
+        <Button x:Name="calculateResultButton" Content="Розрахувати результат" HorizontalAlignment="Left" Margin="330,212,0,0" VerticalAlignment="Top" Height="35" Width="310" Click="calculateResultButton_Click"/>
+        <DataGrid x:Name="dataGrid" HeadersVisibility="None" HorizontalAlignment="Center" VerticalAlignment="Top" ColumnWidth="*" Width="630" Height="419" Margin="0,252,0,0"/>
+    </Grid>
+</Window>
